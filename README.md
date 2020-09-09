@@ -1,0 +1,1 @@
+This is a work in progress for a simple to-do list application where I am working on manipulating the DOM through JavaScript.  I'm not sure if this project will ever be complete, but serves as a playground for me to try some new things out.
