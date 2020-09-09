@@ -1,0 +1,73 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: white;
+}
+
+.gridWrapper {
+    display: grid;
+    height: 99vh;
+    width: 99vw;
+    grid-template-columns: repeat(1fr 5);
+    grid-template-rows: 30px auto 5fr 20px;
+    grid-template-areas:
+    "header header header header header"
+    "form form form form form"
+    "list list list list list"
+    "footer footer footer footer footer";
+
+
+}
+
+.header {
+    grid-area: header;
+    font-size: 15pt;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: .5%;
+}
+
+h1 {
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+.form {
+    grid-area: form;
+    justify-self: center;
+    padding: 1%;
+}
+
+.list {
+    grid-area: list;
+    font-size: 10pt;
+}
+
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    font-size: 10pt;
+    justify-self: end;
+}
+
+#listItem {
+    font-family: 'Nunito', sans-serif;
+    font-size: 13pt;
+    
+}
+
+#listItem>li:nth-child(odd){
+    background-color:white;
+   }
+#listItem>li:nth-child(even){
+    background-color:whitesmoke;
+   }
+
+#listItem :hover {
+    font-size:14pt;
+    font-weight: bold;
+}
